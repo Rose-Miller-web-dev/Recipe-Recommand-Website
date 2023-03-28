@@ -1,0 +1,69 @@
+.active_light_link{
+    color: darkgray;
+}
+
+.link-light:hover{
+    color: darkgray;
+}
+
+.search_input{
+    border-radius: 0%;
+    border-color: black;
+}
+
+.search_input:hover{
+    border-color: white;
+}
+
+.search_icon{
+    border-color: black;
+    color: white;
+}
+
+.search_box{
+    position: relative;
+    left: 25%;
+}
+
+.post_title{
+    text-decoration: none;
+}
+
+.link-light{
+    text-decoration: none;
+}
+
+@media(min-width: 992px){
+    .home-pop-img{
+        height: 320px;
+        width: 320px;
+    }
+
+    .home-pop-sub{
+        width: 320px;
+    }
+    
+}
+
+@media(min-width: 768px){
+    .home-pop-img{
+        height: 320px;
+        width: 320px;
+    }
+
+    .home-pop-sub{
+        width: 320px;
+    }
+}
+
+@media (max-width: 576px) {
+        .home-pop-img{
+            height: 320px;
+            width: 320px;
+        }
+
+        .home-pop-sub{
+            width: 320px;
+        }
+}
+

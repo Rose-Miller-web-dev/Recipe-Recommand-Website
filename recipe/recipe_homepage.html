@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="./recipe_homepage.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand fixed-top bg-black text-white p-4">
+            <div class="container">
+                <a href="#" class="navbar-brand link-light">-R- ecipe</a>
+                
+                <div class="input-group align-items-center bg-black search_box w-25 align-content-center">
+                    <div class="input-group-prepend bg-black">
+                        <span class="input-group-text bg-black search_icon align-content-md-center" id="basic-addon1">
+                            <i class="bi bi-search"></i>
+                        </span>
+                    </div>
+                    <input type="text" class="form-control search_input bg-black d-none d-md-block" placeholder="search" aria-label="Search" aria-describedby="basic-addon1">
+                </div>
+
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-label="Expand Navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="nav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-2">
+                            <a href="" class="nav-link link-secondary ">Home</a>
+                        </li>
+
+                        <li class="nav-item mx-2">
+                            <a href="" class="nav-link link-light">Categories</a>
+                        </li>
+
+                        <li class="nav-item dropdown mx-2">
+                            <a class="nav-link dropdown-toggle navigation_item link-light" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Your Activity</a>
+                            <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Liked Recipes</a>
+                            <a class="dropdown-item" href="#">Saved Recipes</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Add Recipe!</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+        </nav>
+
+        <section class="header">
+            <img src="./pizza.jpg" alt="" class="img-fluid w-100 h-50">
+        </section>
+
+        <section class="p-4 bg-black">
+            <div class="container">
+                <h2 class="text-white my-4">Popular Recipes</h2>
+                <div class="row g-4 home-pop-row align-items-center justify-content-around my-4">
+                    <div class=" me-4 home-pop-box col-auto">
+                        <div class="pop_item d-block">
+                            <img src="./sandwiches.jpg" alt="" class=" home-pop-img">
+                            <h3 class="m-2 text-white">Sandwich</h3>
+                            <p class="m-2 text-secondary home-pop-sub">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, blanditiis.</p>
+                            <div class="meal_tags d-flex m-2">
+                                <div class="btn disabled btn-outline-secondary">tag1</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=" home-pop-box col-auto">
+                        <div class="pop_item d-block me-4">
+                            <img src="./cookie.jpg" alt="" class=" home-pop-img">
+                            <h3 class="m-2 text-white">Sandwich</h3>
+                            <p class="m-2 text-secondary home-pop-sub">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, blanditiis.</p>
+                            <div class="meal_tags d-flex m-2">
+                                <div class="btn disabled btn-outline-secondary">tag1</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=" me-4 home-pop-box col-auto">
+                        <div class="pop_item d-block">
+                            <img src="./sandwiches.jpg" alt="" class=" home-pop-img">
+                            <h3 class="m-2 text-white">Sandwich</h3>
+                            <p class="m-2 text-secondary home-pop-sub">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, blanditiis.</p>
+                            <div class="meal_tags d-flex m-2">
+                                <div class="btn disabled btn-outline-secondary">tag1</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button id="pop_row_toggler" class="btn btn-dark see-more mb-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-row" aria-expanded="false" aria-controls="collapse-row">See More</button>
+                    <div class="row g-4 align-items-center home-pop-row w-75 collapse" id="collapse-row">
+                        <div class="col-lg-2 col-md-1">
+                            <div class="pop_item d-block">
+                                <img src="./cookie.jpg" alt="" class=" home-pop-img">
+                                <h3 class="m-2 text-white">Sandwich</h3>
+                                <p class="m-2 text-secondary home-pop-sub">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, blanditiis.</p>
+                                <div class="meal_tags d-flex m-2">
+                                    <div class="btn disabled btn-outline-secondary">tag1</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+        <section class="p-4 bg-white text-center mt-5">
+            <div class="container">
+                <h3 class="lead">Our Partners</h3>
+                <div class="row g-4 align-items-center justify-content-between">
+                    <div class="col-lg-3 col-md-2">
+                        <img src="./recipe_logo1.png" alt="" class="img-fluid rounded-4">
+                    </div>
+
+                    <div class="col-lg-3 col-md-2">
+                        <img src="./recipe_logo2.png" alt="" class="img-fluid rounded-4">
+                    </div>
+
+                    <div class="col-lg-3 col-md-2">
+                        <img src="./recipe_logo3.png" alt="" class="img-fluid rounded-4">
+                    </div>
+                </div>
+
+                <div class="row g-4 align-items-center justify-content-between">
+                    <div class="col-lg-3 col-md-2">
+                        <img src="./recipe_logo4.png" alt="" class="img-fluid rounded-4">
+                    </div>
+
+                    <div class="col-lg-3 col-md-2">
+                        <img src="./recipe_logo5.png" alt="" class="img-fluid rounded-4">
+                    </div>
+
+                    <div class="col-lg-3 col-md-2">
+                        <img src="./recipe_logo7.png" alt="" class="img-fluid rounded-4">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="p-4 bg-black">
+            <div class="container d-flex">
+                <div class="col-lg-3 col-md-1">
+                    <h2 class="text-light">-R- ECIPE</h2>
+                    <i class="bi bi-facebook mx-2"></i>
+                    <i class="bi bi-twitter mx-2"></i>
+                    <i class="bi bi-instagram mx-2"></i>
+                    <i class="bi bi-youtube mx-2"></i>
+                    <i class="bi bi-pinterest mx-2"></i>
+                                        
+                </div>
+                <row class="g-4 d-md-flex d-grid my-5">
+                    <div class="col-lg-3 col-md-1 d-grid mx-5">
+                        <h3 class="lead">Helpful Links</h3>
+                        <ul class="d-grid">
+                            <li>Subscription</li>
+                            <li>Contact Us</li>
+                            <li>Advertising</li>
+                            <li>Press Center</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-1 mx-5">
+                        <h3 class="lead">Site Maps</h3>
+                        <ul class="d-grid">
+                            <li>Recipes & Menues</li>
+                            <li>Expert Advice</li>
+                            <li>Ingridients</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-1 mx-5 w-50">
+                        <h3 class="lead">Food Innovation Group</h3>
+                        <ul class="d-grid">
+                            <li>Bon Apetite</li>
+                            <li>Gurmet</li>
+                        </ul>
+                    </div>
+                </row>
+            </div>
+        </section>
+
+        <footer class="p-4 bg-dark text-center">
+            <div class="container">
+                <p class="lead post_p text-light">Copy Right &copy; 2022 Recipes and delicious dishes</p>
+            </div>
+        </footer>
+
+        <img src="" id="ph" alt="">
+
+        <script src="./recipe_homepage.js"></script>
+    </body>
+</html>
